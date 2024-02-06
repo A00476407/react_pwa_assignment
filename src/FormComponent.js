@@ -26,8 +26,13 @@ const FormComponent = () => {
     setData(updatedData);
   };
 
-  const handleDelete = async (id) => {
+  const handleUpdate = async (id) => {
     await updateData(id, true);
+    refreshList();
+  };
+
+  const handleDelete = async (id) => {
+    await deleteData(id);
     refreshList();
   };
 
@@ -46,7 +51,7 @@ const FormComponent = () => {
       {data.map((item) => (
         <li key={item.id}>
           {item.completed ? <span style={{textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>
-          {item.item}</span>:item.item} {item.completed ? <></>:<button onClick={() => handleDelete(item.id)}> Completed</button>}
+          {item.item}</span>:item.item} {item.completed ? <></>:<button onClick={() => handleUpdate(item.id)}> Completed</button>} <button onClick={() => handleDelete(item.id)}> Delete</button>
         </li>
       ))}
     </ul>
