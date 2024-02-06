@@ -12,6 +12,8 @@ export const insertData = async (item, completed) => {
 export const getAllData = async () => {
   try {
     const data = await db.data.toArray();
+    data.sort((a, b) => a.id < b.id ? 1 : -1).sort((a, b) => a.completed > b.completed ? 1 : -1)
+    console.log(data);
     console.log('Get all data.');
     return data;
   } catch (error) {
