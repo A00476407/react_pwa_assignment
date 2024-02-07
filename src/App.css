@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+#starButton, #trashButton, #checkButton {
+  padding-left: 5px;
+  padding-right: 0px;
+  border: none;
+  background: none;
+}
+
+span {
+  margin-left: 5px;
+  display: inline-block;
+}

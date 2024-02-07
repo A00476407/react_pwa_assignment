@@ -6,7 +6,7 @@ import FormComponent from './FormComponent';
 function App() {
   return (
     <div>
-      <h1>IndexedDB CRUD Application</h1>
+      <h1>To-Do list</h1>
       <FormComponent />
     </div>
   );
