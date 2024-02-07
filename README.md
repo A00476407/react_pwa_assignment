@@ -1,10 +1,11 @@
 # About the App
 
-This project is a PWA App using IndexDb to store the to-do list item. Service worker is used to enable offline capabilities and resource caching.
+- This project is a PWA App using IndexDb to store the to-do list items. 
+- Service worker is used to enable offline capabilities and resource caching.
 
 ## Key Features
 
-1. Prioritize (Star) the task
+1. Prioritize (Star) the item
 2. Mark the item as 'Completed'
 3. Delete the item
 
