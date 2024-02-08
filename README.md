@@ -28,5 +28,4 @@ Ensure you have Node.js installed on your system to manage packages and run the 
 Build the app using `npm run build`
 
 ### Launch the app
-1. Run `npm install -g serve`, then run `serve -s build` or
-2. Navigate to the build directory, run `npx http-server`
+Navigate to the build directory, run `npx http-server`
