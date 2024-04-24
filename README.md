@@ -1,5 +1,5 @@
 # About the App
-- This project is a PWA App using IndexDb to store the to-do list items. 
+- This project is a progressive web app (PWA) App using IndexDb to store the to-do list items. 
 - Service worker is used to enable offline capabilities and resource caching.
 
 ## Assumptions
